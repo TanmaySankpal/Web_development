@@ -31,7 +31,6 @@ nav{
 	margin: 10px;
 }
 
-
 .menu a:first-child{
 	border-bottom: 2px solid #74b9ff;
 }
@@ -92,7 +91,6 @@ nav{
 	margin:auto;
 }
 
-
 .about-left-col h1{
 	font-size: 50px;
 }
@@ -101,7 +99,6 @@ nav{
 	text-align: justify;
 	margin:15px 0px;
 }
-
 
 .c-btn{
 	padding: 10px;
