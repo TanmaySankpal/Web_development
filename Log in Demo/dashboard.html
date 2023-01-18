@@ -1,0 +1,93 @@
+<h1>Dashboard</h1>
+<h2>Coaching Schedule</h2>
+<ul id="schedule"></ul>
+<h2>Upcoming Events</h2>
+<ul id="events"></ul>
+<h2>Student Present</h2>
+<ul id="students"></ul>
+
+<style>
+    /* Add a background color */
+body {
+  background-color: #f2f2f2;
+}
+
+/* Center the elements on the page */
+h1, h2, ul {
+  text-align: center;
+}
+
+/* Style the schedule list */
+#schedule {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+#schedule li {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 4px;
+}
+
+/* Style the events list */
+#events {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+#events li {
+  background-color: #2196F3;
+  color: white;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 4px;
+}
+
+/* Style the students list */
+#students {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+#students li {
+  background-color: #f44336;
+  color: white;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 4px;
+}
+
+</style>
+<script>
+const schedule = document.getElementById("schedule");
+const events = document.getElementById("events");
+const students = document.getElementById("students");
+
+const scheduleData = ["Monday: Maths", "Tuesday: Science", "Wednesday: English", "Thursday: History", "Friday: Geography"];
+const eventsData = ["Open Day - January 20th", "Parent-Teacher Meeting - February 15th", "Annual Day - March 25th"];
+const studentsData = ["John Doe", "Jane Smith", "Bob Johnson"];
+
+scheduleData.forEach(function(item) {
+    const li = document.createElement("li");
+    li.innerText = item;
+    schedule.appendChild(li);
+  });
+  
+  eventsData.forEach(function(item) {
+    const li = document.createElement("li");
+    li.innerText = item;
+    events.appendChild(li);
+  });
+  
+  studentsData.forEach(function(item) {
+    const li = document.createElement("li");
+    li.innerText = item;
+    students.appendChild(li);
+  });
+  
+</script>
